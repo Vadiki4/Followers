@@ -12,6 +12,7 @@ export const HomePage = styled.div`
 
 export const NameBox = styled.div`
 	width: 350px;
+	max-width: 95%;
 	height: 350px;
 	background: #fff;
 	border-radius: 4px;
@@ -36,6 +37,12 @@ export const NameBox = styled.div`
 		color: #2d2d2d;
 		font-size: 16px;
 		font-weight: 500;
+	}
+
+	@media (max-width: 600px) {
+		h4 {
+			font-size: 5vw;
+		}
 	}
 `;
 
@@ -129,6 +136,14 @@ export const Header = styled.div`
 		border-radius: 4px;
 		border: solid 1px lightgray;
 		cursor: pointer;
+	}
+
+	@media (max-width: 600px) {
+		flex-flow: row wrap;
+
+		label {
+			padding: 0 0 10px 10px;
+		}
 	}
 `;
 
